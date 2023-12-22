@@ -1,0 +1,14 @@
+.title-2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  display: flex;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 60px;
+}

@@ -1,0 +1,29 @@
+.task3-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.question-3 {
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 60px;
+}
+
+.task3-align {
+  .string-truncate {
+    display: flex;
+    gap: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+  }
+}
