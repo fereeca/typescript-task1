@@ -44,7 +44,7 @@ function Task5() {
       <div className="question-3">
         <Question title="Build an application that shows the temperatures for kelvin, celsius and fahrenheit." />
       </div>
-      <main>
+      <main className="main-task5">
         <input
           type="number"
           placeholder="Celsius"

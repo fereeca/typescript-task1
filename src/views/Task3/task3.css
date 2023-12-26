@@ -1,15 +1,15 @@
 .task3-title {
   font-size: 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .question-3 {
   font-size: 25px;
   font-weight: 400;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
-.task3-align {
+/* .task3-align {
   .string-truncate {
     display: flex;
     gap: 2rem;
@@ -26,4 +26,54 @@
     font-weight: 700;
     padding: 20px;
   }
+}  */
+
+.task3-align {
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  height: 100vh; */
+  /* background-color: #f2f2f2; */
+  font-family: "Arial", sans-serif;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  width: 400px;
+}
+
+.string-truncate {
+  margin-bottom: 20px;
+}
+
+.string-truncate label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.string-truncate input {
+  /* width: 100%; */
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.options p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.options p:last-child {
+  margin-bottom: 0;
+}
+
+/* Style for the input[type="number"] */
+#truncateLength {
+  width: 50px;
 }

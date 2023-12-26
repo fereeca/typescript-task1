@@ -15,7 +15,7 @@ function Task2() {
   };
   return (
     <>
-      <h2 className="task3-title">Task-2 Format Date</h2>
+      <h2 className="title-3">Task-2 Format Date</h2>
       <div className="question-6">
         <Question title="Develop a utility function that takes a JavaScript Date object and returns a formatted date string" />
       </div>

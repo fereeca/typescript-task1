@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { formatNumberWithOptions } from "../../Utils/Utils";
 import Question from "../Question/ques";
+import "./task.css";
 
 interface NumberFormatProps {
   value: number;
@@ -48,12 +49,13 @@ const Task4: React.FC<NumberFormatProps> = ({ userSeparator = "," }) => {
       <div className="question-3">
         <Question title="Develop a utility function to format a number with commas as a specific separator." />
       </div>
-      <div>
+      <div className="main-task4">
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
           placeholder="Enter number"
+          className="enter-num"
         />
         <input
           type="number"

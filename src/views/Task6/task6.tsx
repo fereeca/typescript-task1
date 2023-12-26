@@ -52,7 +52,7 @@ function Task6() {
       <div className="question-6">
         <Question title="Build an application that lists all of the varieties of tea available in “Your Friendly Neighborhood Tea Shop”" />
       </div>
-      <main>
+      <main className="main-task6">
         <div>
           <label>
             Min Price:
