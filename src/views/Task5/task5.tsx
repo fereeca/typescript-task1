@@ -8,6 +8,8 @@ import {
   convertKelvinToFahrenheit,
 } from "../../Utils/Utils";
 import "./task5.css";
+import Question from "../Question/ques";
+
 function Task5() {
   const [celsius, setCelsius] = useState<number | "">("");
   const [fahrenheit, setFahrenheit] = useState<number | "">("");
@@ -38,12 +40,10 @@ function Task5() {
   };
   return (
     <>
-      {/* <div className="question">
-        <Questions
-          title="Build an application that shows the temperatures for kelvin, celsius
-                    and fahrenheit"
-        />
-      </div> */}
+      <h2 className="task3-title">Task-5 Convert Temperature</h2>
+      <div className="question-3">
+        <Question title="Build an application that shows the temperatures for kelvin, celsius and fahrenheit." />
+      </div>
       <main>
         <input
           type="number"

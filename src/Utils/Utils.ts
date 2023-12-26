@@ -84,3 +84,30 @@ export const filterAndSortTea = (
     return descendingSorted;
   }
 };
+
+export const formatDate = (date: Date, format: string): string => {
+  switch (format) {
+    case "MM/DD/YYYY":
+      return date.toLocaleDateString("en-US", {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric",
+      });
+    case "YYYY/MM/DD":
+      return `${date.getFullYear()}/${
+        (date.getMonth() + 1 < 10 ? "0" : "") + (date.getMonth() + 1)
+      }/${(date.getDate() < 10 ? "0" : "") + date.getDate()}`;
+    case "YYYY/MMM/DD":
+      return date
+        .toLocaleDateString("en-GB", {
+          year: "numeric",
+          month: "short",
+          day: "2-digit",
+        })
+        .replace(/\s/g, "/")
+        .replace(/,/g, "")
+        .replace(/(\w+)\s(\d+)/, "$1");
+    default:
+      return date.toLocaleDateString();
+  }
+};

@@ -10,7 +10,7 @@ function Task3() {
   const truncatedString: string = Truncate(originalString, truncateLength);
   return (
     <>
-      <h2 className="task3-title">Task-3</h2>
+      <h2 className="task3-title">Task-3 String Manipulation</h2>
       <div className="question-3">
         <Question title="Create a utility function that takes a string as input and returns a new string with the letter capitalized. Apply this utility in a React component." />
       </div>

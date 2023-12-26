@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 // import Questions from '../../components/questions/questions';
 import "./task6.css";
 import { filterAndSortTea, Tea } from "../../Utils/Utils";
+import Question from "../Question/ques";
+
 const teaList: Tea[] = [
   { id: 1, title: "Earl grey", price: 500, description: "Earl grey" },
   { id: 2, title: "Milk tea", price: 230, description: "Milk tea" },
@@ -46,9 +48,10 @@ function Task6() {
   };
   return (
     <>
-      {/* <div className="question">
-        <Questions title="Build an application that lists all of the varieties of tea available in “Your Friendly Neighborhood Tea Shop”. The customers should be able to filter the different types of tea within their price range." />
-      </div> */}
+      <h2 className="task3-title">Task-6 Array Manipulation</h2>
+      <div className="question-6">
+        <Question title="Build an application that lists all of the varieties of tea available in “Your Friendly Neighborhood Tea Shop”" />
+      </div>
       <main>
         <div>
           <label>

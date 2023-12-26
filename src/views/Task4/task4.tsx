@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { formatNumberWithOptions } from "../../Utils/Utils";
+import Question from "../Question/ques";
 
 interface NumberFormatProps {
   value: number;
@@ -42,30 +43,36 @@ const Task4: React.FC<NumberFormatProps> = ({ userSeparator = "," }) => {
   );
 
   return (
-    <div>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Enter number"
-      />
-      <input
-        type="number"
-        value={precision}
-        onChange={handlePrecisionChange}
-        placeholder="Precision"
-      />
-      <select value={format} onChange={handleFormatChange}>
-        <option value="decimal">Decimal</option>
-        <option value="percent">Percent</option>
-        <option value="currency">Currency</option>
-      </select>
-      <select value={currency} onChange={handleCurrencyChange}>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-      </select>
-      <p>Formatted Number: {formattedNumber}</p>
-    </div>
+    <>
+      <h2 className="task3-title">Task-4 Number Formatting Functions</h2>
+      <div className="question-3">
+        <Question title="Develop a utility function to format a number with commas as a specific separator." />
+      </div>
+      <div>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Enter number"
+        />
+        <input
+          type="number"
+          value={precision}
+          onChange={handlePrecisionChange}
+          placeholder="Precision"
+        />
+        <select value={format} onChange={handleFormatChange}>
+          <option value="decimal">Decimal</option>
+          <option value="percent">Percent</option>
+          <option value="currency">Currency</option>
+        </select>
+        <select value={currency} onChange={handleCurrencyChange}>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <p>Formatted Number: {formattedNumber}</p>
+      </div>
+    </>
   );
 };
 
