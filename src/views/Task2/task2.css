@@ -4,19 +4,7 @@
   margin-bottom: 20px;
 }
 
-/* p {
-  display: flex;
-  text-align: center;
 
-  font-size: 25px;
-  font-weight: 400;
-  padding-bottom: 60px;
-}
-
-.container {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}  */
 
 form {
   margin-bottom: 20px;
@@ -34,7 +22,7 @@ select {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 200px;
-  margin-bottom: 10px;
+
 }
 
 p {

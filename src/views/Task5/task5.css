@@ -17,11 +17,11 @@ input[type="number"] {
 
 input[type="number"]:focus {
   outline: none;
-  border-color: dodgerblue; /* Change the border color on focus */
+  border-color: dodgerblue; 
 }
 
 input[type="number"]::placeholder {
   color: #000000;
 }
 
-/* Adjust as needed for the placeholder text */
+
