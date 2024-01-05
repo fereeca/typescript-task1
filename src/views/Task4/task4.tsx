@@ -4,8 +4,8 @@ import Question from "../Question/ques";
 import "./task.css";
 
 interface NumberFormatProps {
-  value: number;
-  userSeparator: string;
+  value?: number;
+  userSeparator?: string;
 }
 
 const Task4: React.FC<NumberFormatProps> = ({ userSeparator = "," }) => {
